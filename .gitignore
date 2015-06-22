@@ -42,5 +42,5 @@ Thumbs.db
 
 # Custom Ignores #
 ######################
-_build/
-gh-pages/
+_site
+.sass-cache
