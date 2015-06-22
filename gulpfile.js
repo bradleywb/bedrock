@@ -3,7 +3,8 @@ var gulp = require('gulp');
 
 // Include Our Plugins
 var jshint = require('gulp-jshint');
-var sass = require('gulp-less');
+var less = require('gulp-less');
+var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
@@ -15,9 +16,16 @@ gulp.task('lint', function() {
         .pipe(jshint.reporter('default'));
 });
 
-// Compile Our Sass
+// Compile Our LESS
 gulp.task('less', function() {
     return gulp.src('less/*.less')
+        .pipe(less())
+        .pipe(gulp.dest('dist/css'));
+});
+
+// Compile Our Sass
+gulp.task('sass', function() {
+    return gulp.src('scss/*.scss')
         .pipe(less())
         .pipe(gulp.dest('dist/css'));
 });
@@ -36,7 +44,9 @@ gulp.task('scripts', function() {
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('less/*.less', ['less']);
+    //gulp.watch('scss/*.scss', ['scss']);
 });
 
 // Default Task
 gulp.task('default', ['lint', 'less', 'scripts', 'watch']);
+//gulp.task('default', ['lint', 'scss', 'scripts', 'watch']);
