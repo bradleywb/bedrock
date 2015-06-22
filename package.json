@@ -1,0 +1,27 @@
+{
+  "name": "_build",
+  "version": "1.0.0",
+  "description": "Build scripts for the bedrock project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradleywb/bedrock.git"
+  },
+  "author": "Brad Barton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradleywb/bedrock/issues"
+  },
+  "homepage": "https://github.com/bradleywb/bedrock",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.11.0",
+    "gulp-less": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}

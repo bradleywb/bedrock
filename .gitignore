@@ -40,7 +40,6 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-# Custom Ignores #
+# Node Modules #
 ######################
-_build/
-gh-pages/
+node_modules
