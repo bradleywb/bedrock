@@ -10,11 +10,13 @@ var gulp = require('gulp'),
     csslint = require('gulp-csslint'),
     autoprefixer = require('gulp-autoprefixer'),
     newer = require('gulp-newer'),
+    jscs = require('gulp-jscs'),
+    csscomb = require('gulp-csscomb'),
     del = require('del'),
     path = require('path');
 
 // Compile Our LESS
-gulp.task('build:less', function() {
+gulp.task('build:css', function() {
     var srcFiles = config.paths.src.less + '/_build.less',
         outPath = config.paths.dist.css;
     buildCss(srcFiles, outPath);
@@ -60,7 +62,7 @@ gulp.task('sync:resource', ['clean:dist:resource', 'copy:resource']);
 
 // Watch Files For Changes
 gulp.task('watch:less', function(){
-    gulp.watch(config.paths.src.less + '/**/*.less', ['build:less']);
+    gulp.watch(config.paths.src.less + '/**/*.less', ['build:css']);
 });
 gulp.task('watch:js', function(){
     gulp.watch(config.paths.src.js + '/**/*.js', ['build:js']);

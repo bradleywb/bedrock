@@ -27,7 +27,7 @@
 		"browsers": ["last 2 versions"],
 		"cascade": "false"
 	},
-	"cssLintSettings": ["csslintrc.json"],
+	"cssLintSettings": "csslintrc.json",
 	"lessSettings": {
 	    "modifyVars": {
 	        "cssRoot": "..",
