@@ -1,3 +1,4 @@
+// This is the main application file for Bedrock's JS.
 /*
  RequireJS 2.1.9 Copyright (c) 2010-2012, The Dojo Foundation All Rights Reserved.
  Available via the MIT or new BSD license.

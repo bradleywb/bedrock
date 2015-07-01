@@ -1,1 +1,0 @@
-// This is the main application file for Bedrock's JS.
