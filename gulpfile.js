@@ -78,7 +78,7 @@ gulp.task('watch:resource', function(){
 });
 
 gulp.task('default', ['watch']);
-gulp.task('build', ['build:less', 'build:js', 'sync:resource']);
+gulp.task('build', ['build:css', 'build:js', 'sync:resource']);
 gulp.task('watch', ['watch:less', 'watch:js', 'watch:resource']);
 
 /**********************************************************/
