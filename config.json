@@ -1,0 +1,37 @@
+{
+	"paths": {
+		"src": {
+			"root": "..",
+			"js": "../js",
+			"less": "../less",
+			"resource": "../resource"
+		},
+		"dist": {
+			"root": "../dist",
+			"css": "../dist/css",
+			"js": "../dist/js",
+			"resource": "../dist/resource"
+		},
+		"docs": {
+			"root": "../docs/dist",
+			"css": "../docs/dist/css",
+			"js": "../docs/dist/js",
+			"resource": "../docs/dist/resource"
+		}
+	},
+	"cssFileName": "styles.css",
+	"cssMinFileName": "styles.min.css",
+	"jsFileName": "all.js",
+	"jsMinFileName": "all.min.js",
+	"autoprefixerSettings": {
+		"browsers": ["last 2 versions"],
+		"cascade": "false"
+	},
+	"cssLintSettings": ["csslintrc.json"],
+	"lessSettings": {
+	    "modifyVars": {
+	        "cssRoot": "..",
+	        "docsRoot": ".."
+	    }
+	}
+}
