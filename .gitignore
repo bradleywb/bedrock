@@ -44,3 +44,4 @@ Thumbs.db
 ######################
 _build/
 gh-pages/
+dist/
